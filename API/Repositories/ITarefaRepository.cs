@@ -10,8 +10,8 @@ namespace API.Repositories
         Task<Tarefa> GetTarefaByIdAsync(int id);
         Task<TarefaContainer> GetTarefasEContadorAsync();
         Task<int> SaveAsync(Tarefa novaTarefa);
-        Task<int> UpdateTarefaStatusAsync(Tarefa atualizaTarefa);
-        Task<int> DeleteAsync(int id);
+        Task<bool> UpdateTarefaStatusAsync(Tarefa atualizaTarefa);
+        Task<bool> DeleteAsync(int id);
 
     }
 }
